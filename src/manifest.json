@@ -1,0 +1,17 @@
+{
+    "name": "Siméon",
+    "icons": [
+        {
+            "src": "/src/img/icons/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/src/img/icons/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ], 
+    "start_url": "/signin?source=pwa",
+    "display": "standalone"
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('assets/fonts/Poppins-Thin.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body, .container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+html, .navbar{
+    background-color: #FCF0E8;
+}
+section.navigationBar {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width:282px;
+    height:65px;
+    border-radius: 33px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}	.leaflet-routing-container .leaflet-routing-alternatives-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
