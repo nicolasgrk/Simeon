@@ -8,7 +8,7 @@
 
 </script>
 <a href="../detail_parcours/{id}">
-  <div class="card {city}" style="background-image: url('/src/img/populaire/{image}');">
+  <div class="card {city}" style="background-image: url('/img/populaire/{image}');">
     <div class="card-top"></div>
     <div class="card-bottom">
       <div class="full-city">
@@ -17,7 +17,7 @@
           <p class="cityDistance">Parcours {distance}km</p>
         </div>
         <div class="heart">
-          <img src="/src/img/icons/{heart}.svg" alt="heart">
+          <img src="/img/icons/{heart}.svg" alt="heart">
         </div>
       </div>
     </div>
@@ -92,13 +92,13 @@
 
 }
 /* .SaintMalo{
-	background-image: url("/src/img/populaire/saintMalo.png");
+	background-image: url("/img/populaire/saintMalo.png");
 }
 .Quimper{
-	background-image: url("/src/img/populaire/quimper.png");
+	background-image: url("/img/populaire/quimper.png");
 }
 .Rennes{
-	background-image: url("/src/img/populaire/rennes.png");
+	background-image: url("/img/populaire/rennes.png");
 
 } */
 </style>

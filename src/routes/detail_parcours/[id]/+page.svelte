@@ -110,9 +110,9 @@
           <h2>Parcours 
             {#each Array(5) as _, i}
               {#if i < note}
-                <img class="note" src="/src/img/icons/star.svg" alt="note">
+                <img class="note" src="/img/icons/star.svg" alt="note">
               {:else}
-                <img class="note" src="/src/img/icons/star_light.svg" alt="note">
+                <img class="note" src="/img/icons/star_light.svg" alt="note">
               {/if}
             {/each}
           </h2>
@@ -132,7 +132,7 @@
         {:else}
           {#each pictures as picture}
             <div class="slide">
-              <img  src={`/src/img/detail_parcours/${picture.name}`} alt={picture.description}>
+              <img  src={`/img/detail_parcours/${picture.name}`} alt={picture.description}>
             </div>
           {/each}
         {/if}

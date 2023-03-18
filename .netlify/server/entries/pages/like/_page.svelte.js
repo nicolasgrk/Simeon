@@ -12,10 +12,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="contentBody svelte-1beqkpd">${validate_component(Header2, "Header2").$$render($$result, {}, {}, {})}
 
-	<section class="section Like svelte-1beqkpd"><div class="container"><div class="image-text-wrapper svelte-1beqkpd"><img src="/src/img/heartFull.png" alt="heartFull" class="image icons svelte-1beqkpd">
+	<section class="section Like svelte-1beqkpd"><div class="container"><div class="image-text-wrapper svelte-1beqkpd"><img src="/img/icons/heart_like.svg" alt="heartFull" class="image icons svelte-1beqkpd">
 				<div class="text svelte-1beqkpd"><h2 class="subtitle svelte-1beqkpd">Like
 					</h2></div>
-				<img src="/src/img/icons/reglage.svg" alt="Image 2" class="image settings svelte-1beqkpd"></div></div></section>
+				<img src="/img/icons/reglage.svg" alt="Image 2" class="image settings svelte-1beqkpd"></div></div></section>
 	
 	<section class="section"><div class="container"><div class="columns is-mobile is-multiline">${each(likes, (like) => {
     return `<div class="column">${validate_component(City, "City").$$render(

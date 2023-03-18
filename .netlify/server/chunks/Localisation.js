@@ -6,9 +6,9 @@ const css = {
 };
 const Localisation = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<section class="section"><div id="region-container" class="svelte-44lnsy"><img class="icons cible" src="/src/img/icons/cible.svg" alt="cible">
+  return `<section class="section"><div id="region-container" class="svelte-44lnsy"><img class="icons cible" src="/img/icons/cible.svg" alt="cible">
       <p id="region" class="svelte-44lnsy">Chargement de la géolocalisation...</p>
-      <div class="container svelte-44lnsy"><div class="image"><a class="icons Profils svelte-44lnsy" href="/profil"><img class="icons Profils svelte-44lnsy" src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
+      <div class="container svelte-44lnsy"><div class="image"><a class="icons Profils svelte-44lnsy" href="/profil"><img class="icons Profils svelte-44lnsy" src="/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>

@@ -33,13 +33,13 @@
 	<section class="section Like">
 		<div class="container">
 			<div class="image-text-wrapper">
-				<img src="/src/img/categorie/{category_name}.svg" alt="{category_name}" class="image icons">
+				<img src="/img/categorie/{category_name}.svg" alt="{category_name}" class="image icons">
 				<div class="text">
 					<h2 class="subtitle">
 						{category_name}
 					</h2>
 				</div>
-				<img src="/src/img/icons/reglage.svg" alt="Image 2" class="image settings">
+				<img src="/img/icons/reglage.svg" alt="Image 2" class="image settings">
 			  </div>
 		</div>
 	</section>

@@ -118,12 +118,12 @@ const options = {
 
     <title>Siméon</title>
 
-	<link rel="icon" href="/src/img/icons/192.png" />
+	<link rel="icon" href="/img/icons/192.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel='stylesheet' href='/src/global.css'>
+	<link rel='stylesheet' href='/style/global.css'>
 	<script src="https://kit.fontawesome.com/524c59c103.js" crossorigin="anonymous"><\/script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <link rel="manifest" href="/src/manifest.json"/> 
+    <link rel="manifest" href="/assets/manifest.json"/> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"><\/script> 
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
@@ -142,7 +142,7 @@ const options = {
    <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/src/sw.js').then(function(registration) {
+          navigator.serviceWorker.register('/assets/sw.js').then(function(registration) {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
             console.log('ServiceWorker registration failed: ', err);
@@ -203,7 +203,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "6shi9q"
+  version_hash: "1bh6dhs"
 };
 function get_hooks() {
   return {};

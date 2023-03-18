@@ -13,9 +13,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="contentBody svelte-f40jd8">${validate_component(Localisation, "Localisation").$$render($$result, {}, {}, {})}
 
-	<section class="section Like"><div class="container"><div class="image-text-wrapper svelte-f40jd8"><img src="${"/src/img/categorie/" + escape(category_name, true) + ".svg"}"${add_attribute("alt", category_name, 0)} class="image icons svelte-f40jd8">
+	<section class="section Like"><div class="container"><div class="image-text-wrapper svelte-f40jd8"><img src="${"/img/categorie/" + escape(category_name, true) + ".svg"}"${add_attribute("alt", category_name, 0)} class="image icons svelte-f40jd8">
 				<div class="text svelte-f40jd8"><h2 class="subtitle svelte-f40jd8">${escape(category_name)}</h2></div>
-				<img src="/src/img/icons/reglage.svg" alt="Image 2" class="image settings svelte-f40jd8"></div></div></section>
+				<img src="/img/icons/reglage.svg" alt="Image 2" class="image settings svelte-f40jd8"></div></div></section>
 	<section class="section"><div class="container"><div class="columns is-mobile is-multiline">${each(courses, (course) => {
     return `<div class="column">${validate_component(City, "City").$$render(
       $$result,

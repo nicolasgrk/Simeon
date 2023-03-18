@@ -28,7 +28,7 @@
     <div class="container">
           <div class="is-flex is-horizontal-center">
               <figure class="image is-128x128 profil">
-                <img src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;">
+                <img src="/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;">
               </figure>
           </div>
   
@@ -74,11 +74,11 @@
                 <h2>Statistiques</h2>
                 <div class="columns is-mobile">
                   <div class="column is-vcentered">
-                    <img src="/src/img/navbarIcons/routing.svg" alt="Parcours">
+                    <img src="/img/navbarIcons/routing.svg" alt="Parcours">
                     <span>9,1 </span> km
                   </div>
                   <div class="column is-vcentered">
-                    <img src="/src/img/navbarIcons/flash.svg" alt="Parcours">
+                    <img src="/img/navbarIcons/flash.svg" alt="Parcours">
                     <span>300</span> calories
                   </div>
                 </div>

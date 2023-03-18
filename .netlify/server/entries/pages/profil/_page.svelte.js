@@ -13,7 +13,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="contentBody svelte-18h858o">${validate_component(Localisation, "Localisation").$$render($$result, {}, {}, {})}
 
-  <section class="section profil svelte-18h858o"><div class="container"><div class="is-flex is-horizontal-center svelte-18h858o"><figure class="image is-128x128 profil svelte-18h858o"><img src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;"></figure></div>
+  <section class="section profil svelte-18h858o"><div class="container"><div class="is-flex is-horizontal-center svelte-18h858o"><figure class="image is-128x128 profil svelte-18h858o"><img src="/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;"></figure></div>
   
       <div class="columns is-mobile"><div class="card profilDescription svelte-18h858o"><div class="card-content"><div class="content has-text-centered"><h2 class="svelte-18h858o">${escape(user_firstName)} ${escape(user_lastName)}</h2>
                 <p>${escape(user_bio)}</p></div></div></div></div></div></section>
@@ -23,10 +23,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <div class="groupes famille has-text-centered  svelte-18h858o"><p class="test svelte-18h858o">Famille</p></div>
                 <div class="groupes amis has-text-centered svelte-18h858o"><p class="svelte-18h858o">Amis</p></div></div></div></div></div></div></section>
   <section class="section"><div class="container"><div class="columns is-mobile"><div class="card svelte-18h858o"><div class="card-content"><div class="content"><h2 class="svelte-18h858o">Statistiques</h2>
-                <div class="columns is-mobile"><div class="column is-vcentered"><img src="/src/img/navbarIcons/routing.svg" alt="Parcours">
+                <div class="columns is-mobile"><div class="column is-vcentered"><img src="/img/navbarIcons/routing.svg" alt="Parcours">
                     <span class="svelte-18h858o">9,1 </span> km
                   </div>
-                  <div class="column is-vcentered"><img src="/src/img/navbarIcons/flash.svg" alt="Parcours">
+                  <div class="column is-vcentered"><img src="/img/navbarIcons/flash.svg" alt="Parcours">
                     <span class="svelte-18h858o">300</span> calories
                   </div></div></div></div></div></div></div></section>
   <a href="/"><section class="section" style="text-align:center"><div class="container"><div class="columns is-mobile"><div class="card deconnexion svelte-18h858o"><div class="card-content"><div class="content"><p>Déconnexion</p></div></div></div></div></div></section></a></div>

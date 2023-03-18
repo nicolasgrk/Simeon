@@ -40,7 +40,7 @@ const Categories = create_ssr_component(($$result, $$props, $$bindings, slots) =
   if ($$props.id === void 0 && $$bindings.id && id !== void 0)
     $$bindings.id(id);
   $$result.css.add(css$1);
-  return `<a href="${"../detail_categorie/" + escape(id, true)}"><div class="slide svelte-1wcxtou"><div class="slide_categorie svelte-1wcxtou"><img class="categorieImg svelte-1wcxtou" src="${"/src/img/categorie/" + escape(categorie, true) + ".svg"}" alt="">
+  return `<a href="${"../detail_categorie/" + escape(id, true)}"><div class="slide svelte-1wcxtou"><div class="slide_categorie svelte-1wcxtou"><img class="categorieImg svelte-1wcxtou" src="${"/img/categorie/" + escape(categorie, true) + ".svg"}" alt="">
       <p class="categorieName svelte-1wcxtou">${escape(categorie)}</p></div></div>
 </a>`;
 });

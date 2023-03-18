@@ -9,7 +9,7 @@
 <a href="../detail_categorie/{id}">
   <div class="slide">
     <div class="slide_categorie">
-      <img class="categorieImg" src="/src/img/categorie/{categorie}.svg" alt="">
+      <img class="categorieImg" src="/img/categorie/{categorie}.svg" alt="">
       <p class="categorieName">{categorie}</p>
     </div>
   </div>

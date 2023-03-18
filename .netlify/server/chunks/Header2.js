@@ -6,9 +6,9 @@ const css = {
 };
 const Header2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<section class="section"><div id="retour-container" class="svelte-zjcty0"><img class="icons left_arrow" src="/src/img/icons/left_arrow.svg" alt="left_arrow" onclick="history.back()">
+  return `<section class="section"><div id="retour-container" class="svelte-zjcty0"><img class="icons left_arrow" src="/img/icons/left_arrow.svg" alt="left_arrow" onclick="history.back()">
       <p id="retour" onclick="history.back()" class="svelte-zjcty0">Retour</p>
-      <div class="container svelte-zjcty0"><div class="image"><a class="icons Profils svelte-zjcty0" href="/profil"><img class="icons Profils svelte-zjcty0" src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
+      <div class="container svelte-zjcty0"><div class="image"><a class="icons Profils svelte-zjcty0" href="/profil"><img class="icons Profils svelte-zjcty0" src="/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>

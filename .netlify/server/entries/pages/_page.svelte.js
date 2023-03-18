@@ -6,13 +6,13 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="contentBody"><div class="header svelte-1cjtugv"><div class="logo"><img src="/src/img/login/logo.svg"></div></div>
+  return `<div class="contentBody"><div class="header svelte-1cjtugv"><div class="logo"><img src="/img/login/logo.svg"></div></div>
 	<div class="content svelte-1cjtugv"><div class="image-container svelte-1cjtugv"><h1 class="title svelte-1cjtugv">Créer un compte</h1>
-		<img class="logo_img svelte-1cjtugv" src="/src/img/login/Hey.svg" alt="Image de fond"></div>
-	  <section class="section svelte-1cjtugv"><div class="container"><form class="svelte-1cjtugv"><div class="input-container svelte-1cjtugv"><img src="/src/img/login/mail.svg" alt="" class="svelte-1cjtugv">
+		<img class="logo_img svelte-1cjtugv" src="/img/login/Hey.svg" alt="Image de fond"></div>
+	  <section class="section svelte-1cjtugv"><div class="container"><form class="svelte-1cjtugv"><div class="input-container svelte-1cjtugv"><img src="/img/login/mail.svg" alt="" class="svelte-1cjtugv">
 					<input type="email" id="email" name="email" placeholder="E-mail" required class="svelte-1cjtugv">
 					<span id="email-erreur" class="erreur svelte-1cjtugv"></span></div>
-				<div class="input-container svelte-1cjtugv"><img src="/src/img/login/lock.svg" alt="" class="svelte-1cjtugv">
+				<div class="input-container svelte-1cjtugv"><img src="/img/login/lock.svg" alt="" class="svelte-1cjtugv">
 					<input type="password" id="pswd" name="pswd" placeholder="Mot de passe" required class="svelte-1cjtugv">
     				<span id="pswd-erreur" class="erreur svelte-1cjtugv"></span></div>
 				<button type="button" id="submit" class="svelte-1cjtugv">Valider</button></form>

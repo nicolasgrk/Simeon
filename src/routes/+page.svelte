@@ -33,24 +33,24 @@
 <div class="contentBody">
 	<div class="header">
 	  <div class="logo">
-		<img src="/src/img/login/logo.svg">
+		<img src="/img/login/logo.svg">
 	  </div>
 	</div>
 	<div class="content">
 	  <div class="image-container">
 		<h1 class="title">Créer un compte</h1>
-		<img class="logo_img" src="/src/img/login/Hey.svg" alt="Image de fond">
+		<img class="logo_img" src="/img/login/Hey.svg" alt="Image de fond">
 	  </div>
 	  <section class="section">
 		<div class="container">
 			<form>
 				<div class="input-container">
-					<img src="/src/img/login/mail.svg" alt="">
+					<img src="/img/login/mail.svg" alt="">
 					<input type="email" id="email" name="email" placeholder="E-mail" required>
 					<span id="email-erreur" class="erreur"></span>
 				</div>
 				<div class="input-container">
-					<img src="/src/img/login/lock.svg" alt="">
+					<img src="/img/login/lock.svg" alt="">
 					<input type="password" id="pswd" name="pswd" placeholder="Mot de passe"required>
     				<span id="pswd-erreur" class="erreur"></span>
 				</div>

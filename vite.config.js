@@ -4,7 +4,7 @@ const config = {
   plugins: [sveltekit()],
   server: {
     fs: {
-      allow: ['/backend', '/src']
+      allow: ['/backend', '/']
     }
   }
 };

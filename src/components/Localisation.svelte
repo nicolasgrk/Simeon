@@ -32,11 +32,11 @@
 </script>
 <section class="section">
   <div id="region-container">
-      <img class="icons cible" src="/src/img/icons/cible.svg" alt="cible">
+      <img class="icons cible" src="/img/icons/cible.svg" alt="cible">
       <p id="region">Chargement de la géolocalisation...</p>
       <div class="container">
         <div class="image">
-          <a class="icons Profils" href="/profil"><img class="icons Profils"  src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
+          <a class="icons Profils" href="/profil"><img class="icons Profils"  src="/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>

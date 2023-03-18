@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Poppins-light';
-    src: url('asssets/fonts/poppins/Poppins-Thin.ttf');
+    src: url('../assets/fonts/poppins/Poppins-Thin.ttf');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-Medium';
-  src: url('asssets/fonts/poppins/Poppins-Medium.ttf');
+  src: url('../assets/fonts/poppins/Poppins-Medium.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-SemiBold';
-  src: url('asssets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  src: url('../assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

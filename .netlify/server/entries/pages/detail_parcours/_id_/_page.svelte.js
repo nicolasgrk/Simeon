@@ -21,12 +21,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 	<section class="section Parcours svelte-1kvpj2p"><div class="container"><div class="columns is-mobile"><div class="column"><h2 class="svelte-1kvpj2p">Parcours 
             ${each(Array(5), (_, i) => {
-    return `${i < note ? `<img class="note" src="/src/img/icons/star.svg" alt="note">` : `<img class="note" src="/src/img/icons/star_light.svg" alt="note">`}`;
+    return `${i < note ? `<img class="note" src="/img/icons/star.svg" alt="note">` : `<img class="note" src="/img/icons/star_light.svg" alt="note">`}`;
   })}</h2>
           <h2 class="city svelte-1kvpj2p">${escape(Coursename)} <span class="distance svelte-1kvpj2p">${escape(distance)} km</span></h2></div></div></div></section>
 
   <section class="section Pictures svelte-1kvpj2p"><div class="container"><div class="slider svelte-1kvpj2p">${pictures.length === 0 ? `<div class="slide svelte-1kvpj2p">No pictures available.</div>` : `${each(pictures, (picture) => {
-    return `<div class="slide svelte-1kvpj2p"><img${add_attribute("src", `/src/img/detail_parcours/${picture.name}`, 0)}${add_attribute("alt", picture.description, 0)} class="svelte-1kvpj2p">
+    return `<div class="slide svelte-1kvpj2p"><img${add_attribute("src", `/img/detail_parcours/${picture.name}`, 0)}${add_attribute("alt", picture.description, 0)} class="svelte-1kvpj2p">
             </div>`;
   })}`}</div></div></section>
   
