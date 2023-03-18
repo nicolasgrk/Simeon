@@ -8,19 +8,26 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@rollup/pluginutils": "^5.0.2",
 		"@sveltejs/adapter-auto": "^1.0.0-next.90",
+		"@sveltejs/adapter-netlify": "^2.0.6",
 		"@sveltejs/kit": "^1.0.0-next.587",
+		"routify": "^1.2.7",
 		"svelte": "^3.55.1",
 		"svelte-modal": "^0.4.0",
-		"vite": "^4.0.0"
+		"vite": "^4.0.0",
+		"vite-plugin-css-modules": "^0.0.1"
 	},
 	"type": "module",
 	"dependencies": {
 		"@google/maps": "^1.1.3",
+		"@mapbox/mapbox-gl-geocoder": "^5.0.1",
 		"google-maps": "^4.3.3",
 		"leaflet": "^1.9.3",
 		"leaflet-control-geocoder": "^2.4.0",
 		"leaflet-routing-machine": "^3.2.12",
+		"mapbox-gl": "^2.13.0",
+		"svelte-routing": "^1.6.0",
 		"svelte-spa-router": "^3.3.0",
 		"svelte-store": "^0.0.2"
 	}

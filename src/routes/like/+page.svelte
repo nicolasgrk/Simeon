@@ -1,20 +1,23 @@
 
 <script>
-    import Navbar from "../../components/Navbar.svelte";
-	import HelloUser from "../../components/HelloUser.svelte";
-    import Recherche from "../../components/Recherche.svelte";
-	import City from "../../components/City.svelte";
-	import Localisation from "../../components/Localisation.svelte";
+		import { onMount } from 'svelte';
 
-    let name="Chloé dupont";
-	let city;
-	let home;
-	let pin;
-	let like;
+    import Navbar from "../../components/Navbar.svelte";
+	import City from "../../components/City.svelte";
+    import Header2 from "../../components/Header2.svelte";
+	let likes = []; 
+	async function getLike() {
+		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Likes/Like_readByUserId.php?user_id=1`);
+		const data = await response.json();
+		likes = data.likes;
+	}
+	onMount(() => {
+		getLike();
+  });
 
 </script>
 <div class="contentBody">
-	<Localisation />
+	<Header2 />
 
 	<section class="section Like">
 		<div class="container">
@@ -25,63 +28,22 @@
 						Like
 					</h2>
 				</div>
-				<img src="/src/img/icons/reglage.png" alt="Image 2" class="image settings">
+				<img src="/src/img/icons/reglage.svg" alt="Image 2" class="image settings">
 			  </div>
 		</div>
 	</section>
+	
 	<section class="section">
 		<div class="container">
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
+		  <div class="columns is-mobile is-multiline">
+			{#each likes as like}
+			<div class="column">
+			  <City city={like.course_name} distance={like.course_distance} image={like.course_image} id={like.course_id} heart="heart_full"/>
 			</div>
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
-			</div>
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
-			</div>
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
-			</div>
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
-			</div>
-			<div class="columns is-mobile">
-				<div class="column">
-					<City city={"Quimper"}/>
-				</div>
-				<div class="column">
-					<City city={"SaintMalo"}/>
-				</div>
-			</div>
-			
+			{/each}       
+		  </div>
 		</div>
-	</section>
+	  </section>
 
 
 	<Navbar home={"Home"} pin={"Pin"} like={"Like_active"} />

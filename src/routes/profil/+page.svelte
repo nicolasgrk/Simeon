@@ -1,14 +1,25 @@
 
 <script>
+  import { onMount } from 'svelte';
   import Navbar from "../../components/Navbar.svelte";
-	import HelloUser from "../../components/HelloUser.svelte";
 	import Localisation from "../../components/Localisation.svelte";
 
-  let name="Chloé dupont";
-  let home;
-	let pin;
-	let like;
+  let user_firstName;
+  let user_lastName;
+  let user_bio;
+  let user_icon;
+  async function getUser() {
+		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Users/Users_readOne.php?id=1`);
+    const data = await response.json();
+    user_firstName = data.user_firstName;
+    user_lastName = data.user_lastName;
+    user_bio = data.user_bio;
+    user_icon = data.user_icon;
 
+  }
+	onMount(() => {
+		getUser();
+  });
 </script>
 <div class="contentBody">
   <Localisation />
@@ -17,16 +28,16 @@
     <div class="container">
           <div class="is-flex is-horizontal-center">
               <figure class="image is-128x128 profil">
-                  <img src="/src/img/testImage.png" alt="Placeholder image">
-                </figure>
+                <img src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;">
+              </figure>
           </div>
   
       <div class="columns is-mobile">
         <div class="card profilDescription">
             <div class="card-content">
               <div class="content has-text-centered">
-                <h2>{name}</h2>
-                <p>lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.</p>
+                <h2>{user_firstName} {user_lastName}</h2>
+                <p>{user_bio}</p>
               </div>
             </div>
         </div>       
@@ -63,11 +74,11 @@
                 <h2>Statistiques</h2>
                 <div class="columns is-mobile">
                   <div class="column is-vcentered">
-                    <img src="/src/img/navbarIcons/routing.png" alt="Parcours">
+                    <img src="/src/img/navbarIcons/routing.svg" alt="Parcours">
                     <span>9,1 </span> km
                   </div>
                   <div class="column is-vcentered">
-                    <img src="/src/img/navbarIcons/flash.png" alt="Parcours">
+                    <img src="/src/img/navbarIcons/flash.svg" alt="Parcours">
                     <span>300</span> calories
                   </div>
                 </div>
@@ -77,7 +88,22 @@
       </div>
     </div>
   </section>
-  
+  <a href="/">
+  <section class="section" style="text-align:center">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="card deconnexion">
+            <div class="card-content">
+              <div class="content">
+                <p>Déconnexion</p>
+              </div>
+            </div>
+        </div>       
+      </div>
+    </div>
+  </section></a>
+
+
   
 </div>
 <Navbar home={"Home"} pin={"Pin"} like={"Like"} />
@@ -128,5 +154,14 @@ span{
 .profil{
   margin-top: -80px;
 }
+figure{
+  margin-bottom: 15px;
+
+}
+.deconnexion{
+  background-color: #142B63;
+  color:white;
+}
+
 
 </style>

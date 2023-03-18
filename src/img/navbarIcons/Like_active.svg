@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="29.125" viewBox="0 0 24 29.125">
+  <g id="Groupe_133" data-name="Groupe 133" transform="translate(-199 -17)">
+    <g id="vuesax_bold_heart" data-name="vuesax/bold/heart" transform="translate(-37 -171)">
+      <g id="heart">
+        <path id="Vector" d="M14.44,0A5.549,5.549,0,0,0,10,2.23,5.552,5.552,0,0,0,0,5.59,10.678,10.678,0,0,0,.52,8.9c1.58,5,6.45,7.99,8.86,8.81a2.181,2.181,0,0,0,1.24,0c2.41-.82,7.28-3.81,8.86-8.81A10.678,10.678,0,0,0,20,5.59,5.574,5.574,0,0,0,14.44,0Z" transform="translate(238 191.1)" fill="#0cac5c"/>
+        <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(260 212) rotate(180)" fill="none" opacity="0"/>
+      </g>
+    </g>
+    <line id="Ligne_13" data-name="Ligne 13" x2="11" transform="translate(205.5 44.625)" fill="none" stroke="#4ea964" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

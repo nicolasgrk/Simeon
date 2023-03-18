@@ -41,8 +41,8 @@
 		background-color: #fff ;
 		border-radius: 100px;
 	}
-	.fa-search{
-		color: #142B63;
+	.fa-search, .fa-sliders-h{
+		color: #0CAC5C;
 	}
 	.control.has-icons-left .input, .control.has-icons-left .select select {
 		padding-left: 3.5em;

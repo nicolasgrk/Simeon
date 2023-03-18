@@ -32,11 +32,11 @@
 </script>
 <section class="section">
   <div id="region-container">
-      <img class="icons cible" src="/src/img/icons/cible.png" alt="cible">
+      <img class="icons cible" src="/src/img/icons/cible.svg" alt="cible">
       <p id="region">Chargement de la géolocalisation...</p>
       <div class="container">
         <div class="image">
-          <a class="icons Profils" href="/profil"><img class="icons Profils" src="/src/img/profil.png" alt="Profils"></a>
+          <a class="icons Profils" href="/profil"><img class="icons Profils"  src="/src/img/user/john_doe.jpeg" alt="Placeholder image" style="border-radius: 50%;width: 20%;"></a>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
@@ -52,92 +52,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100vh;
   padding: 0 20px;
-}
-
-.image {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.image a {
-  position: relative;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.circle {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px SOLID #fff;
-  border-radius: 50%;
-}
-
-.circle:nth-child(1) {
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px SOLID #fff;
-  border-radius: 50%;
-}
-
-.circle:nth-child(2) {
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px SOLID #fff;
-  border-radius: 50%;
-}
-
-.circle:nth-child(3) {
-  bottom: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px SOLID #fff;
-  border-radius: 50%;
-}
-
-.circle:nth-child(4) {
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2.5);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px SOLID #fff;
-  border-radius: 50%;
-}
-
-.icons {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.cible {
-  margin-right: 10px;
-}
-
-#region {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
 }
 
 #region-container {
@@ -155,6 +70,9 @@ p{
     font-size: 16px;
     color: #142B63;
     font-weight: bold;
+}
+#region{
+  padding-left:10px;
 }
 
 </style>

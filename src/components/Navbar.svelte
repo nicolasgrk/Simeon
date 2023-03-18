@@ -6,13 +6,13 @@
 <section  class="navigationBar">
     <div class="columns is-mobile is-centered">
         <div class="column is-6">
-			<a href="/accueil"><img class="categorieImg" src="/src/img/navbarIcons/{home}.png" alt="{home}"></a>
+			<a href="/accueil"><img class="categorieImg" src="/src/img/navbarIcons/{home}.svg" alt="{home}"></a>
         </div>
         <div class="column is-6">
-			<a href="/like"><img class="categorieImg" src="/src/img/navbarIcons/{like}.png" alt="{like}"></a>
+			<a href="/map"><img class="categorieImg" src="/src/img/navbarIcons/{pin}.svg" alt="{pin}"></a>
         </div>
         <div class="column is-6">
-			<a href="/map"><img class="categorieImg" src="/src/img/navbarIcons/{pin}.png" alt="{pin}"></a>
+			<a href="/like"><img class="categorieImg" src="/src/img/navbarIcons/{like}.svg" alt="{like}"></a>
         </div>
     </div>
 </section>
