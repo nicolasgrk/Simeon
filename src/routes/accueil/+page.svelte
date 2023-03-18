@@ -15,7 +15,7 @@
     let user_icon = null;
   	// Fonction pour récupérer le nom de l'utilisateur depuis le serveur
   	async function getUserName() {
-        const response = await fetch("http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Users/Users_readOne.php?id=1"); // Utilisez l'URL de votre contrôleur avec l'ID de l'utilisateur à récupérer
+        const response = await fetch("https://yamangjulien.000webhostapp.com/controllers/Users/Users_readOne.php?id=1"); // Utilisez l'URL de votre contrôleur avec l'ID de l'utilisateur à récupérer
         const data = await response.json();
 		const firstName = data.user_firstName; // Récupérez le prénom de l'utilisateur à partir de la réponse JSON
 		const lastName = data.user_lastName; // Récupérez le nom de l'utilisateur à partir de la réponse JSON
@@ -23,12 +23,12 @@
 		name = fullName; // Affectez la chaîne concaténée à la variable name
     }
 	async function getCourses() {
-		const response = await fetch('http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Courses/Courses_read.php');
+		const response = await fetch('https://yamangjulien.000webhostapp.com/controllers/Courses/Courses_read.php');
 		const data = await response.json();
 		courses = data.courses;
   	}
 	async function getCategories() {
-		const response = await fetch('http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Categories/Categories_read.php');
+		const response = await fetch('https://yamangjulien.000webhostapp.com/controllers/Categories/Categories_read.php');
 		const data = await response.json();
 		categories = data.categories;
 	}

@@ -10,12 +10,12 @@
 
 	let courses = []; 
 	async function getCourses() {
-		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/CoursesCategories/CoursesCategories_read.php?category_id=${id}`);
+		const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/CoursesCategories/CoursesCategories_read.php?category_id=${id}`);
 		const data = await response.json();
 		courses = data.courses;
 	}
 	async function getCategories() {
-		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Categories/Categories_readOne.php?category_id=${id}`);
+		const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Categories/Categories_readOne.php?category_id=${id}`);
 		const data = await response.json();
 		category_name = data.category_name;
   	}

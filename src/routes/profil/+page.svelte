@@ -9,7 +9,7 @@
   let user_bio;
   let user_icon;
   async function getUser() {
-		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Users/Users_readOne.php?id=1`);
+		const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Users/Users_readOne.php?id=1`);
     const data = await response.json();
     user_firstName = data.user_firstName;
     user_lastName = data.user_lastName;

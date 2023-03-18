@@ -6,7 +6,7 @@
 	  formData.append('email', document.querySelector('#email').value);
 	  formData.append('pswd', document.querySelector('#pswd').value);
   
-	  fetch('http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/login.php', {
+	  fetch('https://yamangjulien.000webhostapp.com/controllers/login.php', {
 		method: 'POST',
 		body: formData
 	  }).then(response => {

@@ -14,7 +14,7 @@
   let pictures = [];
 
   async function getCourse() {
-    const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Courses/Courses_readOne.php?id=${id}`);
+    const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Courses/Courses_readOne.php?id=${id}`);
     const data = await response.json();
     Coursename = data.Course_name;
     description = data.Course_description;
@@ -23,7 +23,7 @@
   }
 
   async function getSteps() {
-    const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Steps/Steps_readByCourseId.php?course_id=${id}`);
+    const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Steps/Steps_readByCourseId.php?course_id=${id}`);
     const data = await response.json();
     steps = data.data.map(step => ({
       latitude: step.latitude,
@@ -34,7 +34,7 @@
   }
 
   async function getPictures() {
-    const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Pictures/Pictures_read.php?course_id=${id}`);
+    const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Pictures/Pictures_read.php?course_id=${id}`);
     const data = await response.json();
     pictures = data.photos.map(picture => ({
       id: picture.id,

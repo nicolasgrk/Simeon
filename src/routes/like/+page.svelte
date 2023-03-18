@@ -7,7 +7,7 @@
     import Header2 from "../../components/Header2.svelte";
 	let likes = []; 
 	async function getLike() {
-		const response = await fetch(`http://localhost:8888/MyStartupProject/Simeon/Simeon/backend/controllers/Likes/Like_readByUserId.php?user_id=1`);
+		const response = await fetch(`https://yamangjulien.000webhostapp.com/controllers/Likes/Like_readByUserId.php?user_id=1`);
 		const data = await response.json();
 		likes = data.likes;
 	}
